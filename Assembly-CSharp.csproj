@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{40776B3D-44FF-4743-9E24-4EB0D674E1FF}</ProjectGuid>
+    <ProjectGuid>{EFF9C464-E57B-8D35-1088-5D9EA025069D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,12 +66,24 @@
     <Compile Include="Assets\Scriptes\Spawn.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
-    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
-    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
-    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
     <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
+    <None Include="Assets\PolygonSciFiSpace\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
     <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
