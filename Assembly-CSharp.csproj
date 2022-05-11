@@ -60,18 +60,18 @@
     <Compile Include="Assets\Scriptes\Jogador.cs" />
     <Compile Include="Assets\Scriptes\CameraMan.cs" />
     <Compile Include="Assets\Scriptes\Arma.cs" />
+    <Compile Include="Assets\Scriptes\Inimigo.cs" />
     <Compile Include="Assets\Scriptes\Vida.cs" />
     <Compile Include="Assets\Scriptes\Tiro.cs" />
     <Compile Include="Assets\Scriptes\Spawn.cs" />
-    <Compile Include="Assets\Scriptes\Inimigo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
-    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
-    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
-    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
-    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
-    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
+    <None Include="Assets\Prefab\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

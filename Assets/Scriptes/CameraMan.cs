@@ -4,14 +4,33 @@ using UnityEngine;
 
 public class CameraMan : MonoBehaviour
 {
-    public float moveDaCamera = 1;
+    public GameObject alvo;
+    public GameObject posicao;
+    private RaycastHit hit;
 
-    public float maxY, minY;
+    public float moveXDaCamera, moveYDaCamera;
 
     private Quaternion rotacaoDaCamera;
 
+    public float maxY, minY;
+
+    
+
+    
+
 
     // Start is called before the first frame update
+    
+
+    private void LateUpdate()
+    {
+        /////////MOVIMENTAÇÃO Y DA CAMERA//////////
+        rotacaoDaCamera.x += Input.GetAxis("Mouse Y") * moveYDaCamera * (-1);
+
+        rotacaoDaCamera.x = Mathf.Clamp(rotacaoDaCamera.x, minY, maxY);
+
+        transform.localRotation = Quaternion.Euler(rotacaoDaCamera.x, rotacaoDaCamera.y, rotacaoDaCamera.z);
+    }
     void Start()
     {
         Cursor.visible = false;
@@ -19,13 +38,19 @@ public class CameraMan : MonoBehaviour
 
         rotacaoDaCamera = transform.localRotation;
     }
-
-    private void LateUpdate()
+    private void FixedUpdate()
     {
-        rotacaoDaCamera.x += Input.GetAxis("Mouse Y") * moveDaCamera *(-1);
+        transform.LookAt(alvo.transform);
 
-        rotacaoDaCamera.x = Mathf.Clamp(rotacaoDaCamera.x, minY, maxY);
+        if (!Physics.Linecast(alvo.transform.position, posicao.transform.position))
+        {
+            transform.position = Vector3.Lerp(transform.position, posicao.transform.position, moveXDaCamera*Time.deltaTime);
+        }
+        else if (Physics.Linecast(alvo.transform.position, posicao.transform.position, out hit))
+        {
+            transform.position = Vector3.Lerp(transform.position, hit.point, moveXDaCamera * Time.deltaTime);
+        }
 
-        transform.localRotation = Quaternion.Euler(rotacaoDaCamera.x, rotacaoDaCamera.y, rotacaoDaCamera.z);
+        
     }
 }

@@ -49,6 +49,10 @@ public class Jogador : MonoBehaviour
         {
             an.CrossFade("Andar");
         }
+        else if (moveX != 0)
+        {
+            an.CrossFade("Andar");
+        }
         else
         {
             an.CrossFade("Idle");
